@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <div id=txt>Some text</div>
+    
+    <script>
+    function rand(){
+        let txt = document.getElementById("txt");
+        let colors = ["red", "green", "yellow", "blue", "orange", "pink", "grey", "yellowgreen", "brown", "black"];
+        let rad = Math.floor(Math.random() * 10)
+        txt.style.color = colors[rad]
+    }
+        setInterval(rand, 1000)
+    </script>
+    </body>
+</html>
